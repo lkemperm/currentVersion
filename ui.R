@@ -10,14 +10,6 @@ shinyUI(fluidPage(
   sidebarLayout(
 
     sidebarPanel(
-#       #Choices for first method for comparison 
-#       selectInput("chooseFirstMethod", label=("Choose first method to compare:"),
-#                   choices=list("qpcRDefault"="qpcRdefault", "Lifetech"="lifetech", "Custom"="custom"), selected=1),
-#       
-#       #Choices for next method for comparison 
-#       selectInput("chooseSecondMethod", label=("Choose second method to compare:"),
-#                   choices=list("None"="none", "qpcRDefault"="qpcRdefault", "Lifetech"="lifetech", "Custom"="custom"
-#                                ), selected=1),
      
       selectInput("chooseFirstMethod", label=("Choose first method to compare:"),
                   choices=c(data(package="miRcomp")$results[,"Item"],"custom")),
