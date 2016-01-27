@@ -41,9 +41,11 @@
 here : <a href="https://www.bioconductor.org/packages/3.3/bioc/vignettes/miRcomp/inst/doc/miRcomp.html">miRcomp package vignette</a>  </p>
 
 <h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Background</h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Web Application Purpose</h3>
 
-<p>Life Technologies has designed a qPCR miRNA array panel to work within their TaqMan® OpenArray® system. The current version of the array has coverage for 754 human miRNAs and additional non-human miRNAs for normalization controls/spike-ins across two primer pools. For raw data analysis, LifeTechnologies uses a closed ExpressionSuite software package to analyze qPCR data. There are a number of previously developed open-source packages to analyze raw qPCR fluorescence data; however, unlike microarray and RNAseq data, raw qPCR data are typically analyzed using the manufacturer’s software. In fact, several open-source packages take expression values (e.g. Ct, Crt, or Cq values) as input, ignoring how these values were estimated. To assess the potential benefits of alternative expression measures, we developed miRcomp, a benchmark data set and R/Bioconductor package to facilitate the development of new algorithms to preprocess LifeTechnologies® OpenArray® miRNA data and to provide tools to integrate the data into other software packages from the Bioconductor tool set.</p>
+<p>It is important to describe the achievements of the miRcomp web application. The miRcomp package by itself includes many useful tools for 
+assessment, comparison and visualization but the web application aims to make visualization faster and more dynamic, while adding a few useful tools
+that accomplish comparisons that can not easily be made using the miRcomp package by itself.    </p>
 
 <h3>
 <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
