@@ -29,48 +29,42 @@
         
         <nav id="pagenav">
         <ol id="nav" type="I">
-          <li><a href="#videotut">Tutorial</a></li>
+          <li>Project Background</li>
           <li><a href="#package">miRcomp Package Intro</a></li>
           <li><a href="#qcSliders">Web Application Purpose</a></li>
           <li><a href="#custom">Special Features</a></li>
         </ol>
       </nav>
-<div id="videotut">
-<h3><a id="p1" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Web Application Tutorial</h3>
-</div>
-<img src="src/ss1.png" alt="Screenshot" style="width:500px;height:400px;">
-        <h3>
+<!--<div id="videotut">-->
+<!--<h3><a id="p1" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Web Application Tutorial</h3>-->
+<!--</div>-->
+<!--<img src="src/ss1.png" alt="Screenshot" style="width:500px;height:400px;">-->
+<!--        <h3>-->
+<a id="background" class="anchor" href="#package" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Background</h3>
+
+<p>MicroRNAs (a class of small regulatory RNAs) are known to alter their expression levels in disease, malignancy, and cell stress [reference]. In this project, we aim to focus attention on microRNA gene expression. The miRcomp software package, benchmark dataset, and web application are crucial tools for the assessment and comparison of competing algorithms. All of these are working together to facilitate the development of new methodology for microRNA expression estimation, and to give researchers a space to assess their own methods. </p>
+
 <a id="package" class="anchor" href="#package" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>miRcomp Package Introduction</h3>
 
-<p>The package uses data from a dilution / mixture experiment to assess methods that estimate microRNA expression from qPCR amplification curves. Specifically, the package provides assessments of accuracy, precision, data quality, titration response, limit of detection, and complete features. Each of these is described in the following sections. To avoid any confusion due to naming conventions (expression estimates from amplification curves have been called Ct values, Crt values, and Cq values to name a few), we refer to the reported values as expression estimates or simply expression. Click 
-here for information about experimental design, assessments and more about how to use the package by itself
+<p>The software package miRcomp developed by @mmcall uses data from a dilution / mixture experiment to assess methods that estimate microRNA expression from qPCR amplification curves. Specifically, the package provides assessments of accuracy, precision, data quality, titration response, limit of detection, and complete features. Each of these is described in more detail in
 <a href="https://www.bioconductor.org/packages/3.3/bioc/vignettes/miRcomp/inst/doc/miRcomp.html">miRcomp package vignette</a>  </p>
 
 <h3>
 <a id="designer-templates" class="anchor" href="#purpose" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Web Application Purpose</h3>
 
-<p>There are several achievements of the miRcomp web application. The miRcomp package by itself includes many useful tools for 
-assessment, comparison and visualization, but the web application aims to make visualization faster and more dynamic. While doing this, it also adds a few useful tools
-that make comparisons possible that can not easily be made using the miRcomp package alone. The web application is also an easier to use tool 
-for non- R users. All packages required by the application are pre-installed and run smoothly on the server, and it is not necessary to 
-have any version of R installed on your computer at all. </p>
+<p>The addition of a web application to the existing software is essential. It helps to increase integration between expression estimation methods and subsequent statistical analyses. The web application makes all of this possible without knowing having any tools to run R installed, or having any knowledge about it. The miRcomp package is pre-installed, and miRcomp data is preloaded within the web application, so making comparisons is made simple. The web application framework also makes comparisons possible that cannot easily be made using the miRcomp package alone.  </p>
 
 
 <h3>
 <a id="creating-pages-manually" class="anchor" href="#qcSliders" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Quality Sliders</h3>
 <img src="src/ss2.png" alt="QC sliders" style="width:400px;height:300px;">
-<p> One of the most important and useful tools in the miRcomp web application is the quality sliders. 
-You can select a value on the widget from 0 to 1, 0 corresponding to including all data when rendering plots and 1 corresponding to including none. Below the 
-sliders, a text field reactively displays the corresponding quality threshold. This corresponds to the numeric value below which values are considered low quality. 
-  + MORE CONTENT </p>
+<p> One of the most notable tools included in the miRcomp web application is quality sliders. You can select a value on a slider that corresponds to how much data you would like to include in your analyses (0 = include all data, 1 = include no data). Once a value has been selected, a quality threshold is displayed in the application. This threshold (qcThreshold) is the numeric value below which values are considered low quality. This tool is particularly useful when comparing a method with itself, because it enables examination of the effect of higher or lower quality thresholds on that data that can also be observed visually quite nicely. </p>
   
   <h3>
 <a id="designer-templates" class="anchor" href="#custom" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Custom Object</h3>
 <img src="src/ss3.png" alt="Custom" style="width:100px;height:150px;">
-<p>When selecting data sets for comparison and assessment, this option allows the user to create their own custom object by uploading 
-  expression estimate (ct) elements and an assessment of the quality of each estimate (qc). </p>
+<p>When selecting data sets for comparison and assessment, this option allows the user to create their own custom object by uploading expression estimate (ct) elements and an assessment of the quality of each estimate (qc). Interested researchers can also submit their methods to be considered to be a part of the web application, so the number of possible comparisons will continue to grow. We hope that this will lead to improvement and new developments in research. </p>
 
-<p>Video tutorial content, here </p>
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
